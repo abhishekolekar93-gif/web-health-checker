@@ -1,0 +1,8 @@
+
+services:
+  monitor:
+    build: .
+    container_name: website-server-monitor
+    restart: unless-stopped
+    volumes:
+      - ./logs:/logs
